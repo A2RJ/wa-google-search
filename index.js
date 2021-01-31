@@ -1,17 +1,17 @@
 const { Client, MessageMedia } = require('whatsapp-web.js');
-const googleIt = require('google-it')
+const googleIt = require('google-it');
 const rp = require('request-promise');
-const rs = require("randomstring");;
+const rs = require("randomstring");
 const fs = require('fs');
-const SESSION_FILE_PATH = './session.json';
 
+const SESSION_FILE_PATH = './session.json';
 let sessionCfg;
 if (fs.existsSync(SESSION_FILE_PATH)) {
     sessionCfg = require(SESSION_FILE_PATH);
 }
 
 
-const client = new Client({ puppeteer: { headless: true }, session: sessionCfg });
+const client = new Client({ puppeteer: { headless: false }, session: sessionCfg });
 client.initialize();
 
 client.on('qr', (qr) => {
@@ -74,7 +74,7 @@ client.on('message', async msg => {
                                 }
                             }
                         })
-                    }, 2000);
+                    }, 1000);
                 });
             }).catch(e => {
                 console.error(e);
