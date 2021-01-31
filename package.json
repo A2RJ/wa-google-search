@@ -1,0 +1,23 @@
+{
+  "name": "wabot",
+  "version": "1.0.0",
+  "description": "WA Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "a2rj",
+  "license": "ISC",
+  "dependencies": {
+    "google": "^2.1.0",
+    "google-it": "^1.6.1",
+    "google-parser": "^2.1.4",
+    "node-reverse-image-search": "^1.0.2",
+    "node-serp": "^1.0.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "se-scraper": "^1.5.7",
+    "whatsapp-web.js": "^1.12.0"
+  }
+}
