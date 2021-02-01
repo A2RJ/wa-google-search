@@ -9,6 +9,7 @@
   "author": "a2rj",
   "license": "ISC",
   "dependencies": {
+    "@sashido/teachablemachine-node": "^1.2.1",
     "google-it": "^1.6.1",
     "randomstring": "^1.1.5",
     "request": "^2.88.2",
